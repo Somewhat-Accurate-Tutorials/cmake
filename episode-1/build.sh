@@ -1,4 +1,8 @@
 #!
 
-mkdir _build
-clang++ -o _build/my_project.exe main.cpp
+BUILD_ROOT=_build
+SOURCE_ROOT=.
+GENERATOR=Ninja
+
+cmake -G $GENERATOR -B $BUILD_ROOT -S $SOURCE_ROOT
+cmake --build $BUILD_ROOT
