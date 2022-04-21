@@ -1,0 +1,7 @@
+# Any directory starting with '_'
+_*/
+
+# IDE
+.vs/
+.vscode/
+out/
